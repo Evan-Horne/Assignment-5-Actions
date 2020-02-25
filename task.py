@@ -1,5 +1,5 @@
 import math
-
+from datetime import date
 
 def firstrun():
     return "success"
@@ -11,3 +11,6 @@ def circleArea(radius):
 
 def firstAndLast(arr):
     return arr[0], arr[-1]
+
+def numDays(d1, d2):
+    return (d2 - d1).days
