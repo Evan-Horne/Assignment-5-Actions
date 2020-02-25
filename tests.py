@@ -1,5 +1,6 @@
 import unittest
 import task
+import math
 
 
 class TestCase(unittest.TestCase):
@@ -13,7 +14,7 @@ class TestCase(unittest.TestCase):
         self.assertNotEqual(expected, task.firstrun())
 
     def testArea(self):
-        expected = 3.14
+        expected = math.pi
         self.assertAlmostEqual(expected, task.circleArea(1))
 
 
