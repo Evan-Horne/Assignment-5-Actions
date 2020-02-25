@@ -17,6 +17,12 @@ class TestCase(unittest.TestCase):
         expected = math.pi
         self.assertAlmostEqual(expected, task.circleArea(1))
 
+    def testFirstAndLast(self):
+        arr = ["first", "middle", "last"]
+        first, last = task.firstAndLast(arr)
+        self.assertEqual(first, "first")
+        self.assertEqual(last, "last")
+
 
 if __name__ == "__main__":
     unittest.main()
